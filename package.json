@@ -1,0 +1,12 @@
+{
+  "name": "use-poll",
+  "version": "0.0.1",
+  "description": "A React hook to help you poll APIs easily.",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/ewhite/use-poll",
+    "type": "git"
+  },
+  "author": "Evan White <evan.douglas.white@gmail.com>",
+  "license": "MIT"
+}
