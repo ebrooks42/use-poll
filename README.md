@@ -2,8 +2,8 @@
 A React hook to help you poll APIs easily.
 
 ## Installing
-With `npm`:
+With `npm`: \
 `npm install --save use-poll`
 
-With `yarn`:
+With `yarn`: \
 `yarn add use-poll`
