@@ -8,5 +8,31 @@
     "type": "git"
   },
   "author": "Evan White <evan.douglas.white@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@sinonjs/fake-timers": "^7.1.2",
+    "@testing-library/react-hooks": "^7.0.1",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.18",
+    "babel-jest": "^27.0.6",
+    "date-fns": "^2.23.0",
+    "delay": "^5.0.0",
+    "jest": "^27.0.6",
+    "prettier": "2.3.2",
+    "react-test-renderer": "^17.0.2",
+    "ts-node": "^10.2.0"
+  },
+  "dependencies": {
+    "dev": "^0.1.3",
+    "react": "^16.8.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  }
 }
