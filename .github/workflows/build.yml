@@ -1,0 +1,27 @@
+name: Build and Test
+
+on: [push]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        node: [12, 14, 16]
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 📥 Install deps
+        run: yarn install --immutable --immutable-cache
+
+      - name: 🏗️ Run build
+        run: yarn build
+
+      - name: ✅ Run tests
+        run: yarn test
